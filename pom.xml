@@ -7,10 +7,18 @@
 	<groupId>com.example</groupId>
 	<artifactId>hello</artifactId>
 	<version>0.1-SNAPSHOT</version>
+
+	<scm>
+    		<url>scm:git:https://github.com/iDalgos/test-maven-app</url>
+    		<connection>scm:git:https://github.com/iDalgos/test-maven-app</connection>
+    		<developerConnection>scm:git:https://github.com/iDalgos/test-maven-app</developerConnection>
+    		<tag>my-app-0.1.0</tag>
+	</scm>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
 	
 	<build>
 		<finalName>hello</finalName>
@@ -48,7 +56,13 @@
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>3.0.2</version>
 			</plugin>
+      			<plugin>
+          			<groupId>org.apache.maven.plugins</groupId>
+          			<artifactId>maven-release-plugin</artifactId>
+          			<configuration>
+              				<stagingRepository>localforme::default::file:///home/maven/stage/</stagingRepository>
+          			</configuration>
+      			</plugin>
 		</plugins>
 	</build>
-	
 </project>
