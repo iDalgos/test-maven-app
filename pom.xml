@@ -4,7 +4,7 @@
 	
 	<groupId>com.example</groupId>
 	<artifactId>hello</artifactId>
-	<version>0.4-SNAPSHOT</version>
+	<version>0.4</version>
 
 	<scm>
     		<url>scm:git:https://github.com/iDalgos/test-maven-app/</url>
